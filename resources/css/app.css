@@ -1,0 +1,5 @@
+.form.login{
+    transform: translateX(-50%);
+    width: calc(100% + 220px);
+    bottom: -86%;
+}
