@@ -19,7 +19,7 @@ use App\Http\Controllers\LoginController;
 });*/
 
 Route::view('/', 'login-template')->name('login');
-Route::view('/home', 'home-template')->middleware('auth')->name('home');
+Route::view('/home', '/home/dashboard')->middleware('auth')->name('home');
 
 Route::post('/register', [LoginController::class, 'RegisterUser'])->name('register-user');
 Route::post('/login', [LoginController::class, 'Login'])->name('login-user');
